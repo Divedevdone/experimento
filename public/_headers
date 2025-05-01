@@ -1,7 +1,8 @@
+/assets/*.js
+  Content-Type: application/javascript
+
+/assets/*.css
+  Content-Type: text/css
+
 /index.html
   Content-Type: text/html; charset=UTF-8
-
-/assets/*
-  Content-Type: application/javascript
-/assets/*
-  Content-Type: text/css
