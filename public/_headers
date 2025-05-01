@@ -1,2 +1,2 @@
-/index.html
-  Content-Type: text/html
+/assets/*.js
+  Content-Type: application/javascript
