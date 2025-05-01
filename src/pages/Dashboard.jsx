@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
@@ -26,9 +25,10 @@ export default function Dashboard() {
             <ul className="user-list">
                 {usuarios.map(user => (
                     <li key={user.id} className="user-card">
-                        <span className="user-name">{user.nome} {user.sobrenome}</span><br />
-                        <span className="user-email">{user.email}</span><br />
-                        <span className="user-dob">Nascimento: {user.dataNascimento}</span>
+                        <span className="user-name">Nome: {user.nome}</span>
+                        <span className="user-lastname">Sobrenome: {user.sobrenome}</span>
+                        <span className="user-email">Email: {user.email}</span>
+                        <span className="user-birthdate">Data de Nascimento: {user.dataNascimento}</span>
                     </li>
                 ))}
             </ul>
