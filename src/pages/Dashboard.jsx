@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
-import './index.css';
+import '../index.css';
 
 export default function Dashboard() {
     const [usuarios, setUsuarios] = useState([]);
